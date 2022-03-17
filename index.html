@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <title>Life on the Gala Planet</title>
+    <script src="Map.js" type="text/javascript" defer></script>
+    <script src="Data.js" type="text/javascript" defer></script>
+    <script src="GameTimer.js" type="text/javascript" defer></script>
+    <script src="GameButton.js" type="text/javascript" defer></script>
+    <script src="GameLandform.js" type="text/javascript" defer></script>
+    <script src="GameBuilding.js" type="text/javascript" defer></script>
+    <script src="GameEvent.js" type="text/javascript" defer></script>
+    <script src="GamePage.js" type="text/javascript" defer></script>
+    <script src="MenuEvent.js" type="text/javascript" defer></script>
+    <script src="MenuPage.js" type="text/javascript" defer></script>
+    <script src="PlayEvent.js" type="text/javascript" defer></script>
+    <script src="PlayPage.js" type="text/javascript" defer></script>
+    <script src="MainActivity.js" type="text/javascript" defer></script>
+</head>
+<body style="height: 100%" onkeydown="detectKeyboardDown(event)" onkeyup="detectKeyboardUp()">
+    <canvas id="view" style="width: 100%;height: 100%" onmousemove="detectMouseMove(event)" onclick="detectMouseClick()"></canvas>
+    <canvas hidden id="viewBuffer"></canvas>
+    <canvas hidden id="viewBufferForImage"></canvas>
+    <audio id="BGM">
+        <source src="assets/music/BGM.mp3" type="audio/mp3" hidden>
+    </audio>
+</body>
+</html>
